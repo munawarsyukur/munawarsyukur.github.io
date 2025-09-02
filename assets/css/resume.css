@@ -1,0 +1,34 @@
+
+/* Layout dasar */
+.cv { --gap: 14px; --fg: #111; --muted:#666; --line:#e6e6e6; --max: 900px; color: var(--fg); }
+.cv { max-width: var(--max); margin: 2rem auto 4rem; padding: 0 1rem; }
+.cv h1, .cv h2 { line-height: 1.2; margin: 0 0 .6rem; }
+.cv h2 { font-size: 1.15rem; text-transform: uppercase; letter-spacing: .04em; margin-top: 2rem; }
+.cv p { margin: .4rem 0 .8rem; }
+.cv a { text-decoration: none; border-bottom: 1px dotted currentColor; }
+.cv__header { border-bottom: 1px solid var(--line); padding-bottom: 1rem; margin-bottom: 1rem; }
+.cv__name { font-size: 2rem; margin-bottom: .2rem; }
+.cv__headline { color: var(--muted); margin-bottom: .6rem; }
+.cv__meta { display: flex; gap: 1rem; flex-wrap: wrap; padding-left: 0; list-style: none; margin: 0 0 .5rem; }
+.cv__print { margin-top: .5rem; padding: .4rem .8rem; border: 1px solid var(--line); border-radius: 8px; background: #fff; cursor: pointer; }
+.cv__section { margin-top: 1.2rem; }
+.cv__item { padding: .8rem 0; border-bottom: 1px dashed var(--line); }
+.cv__item:last-child { border-bottom: 0; }
+.cv__item-head { display: flex; gap: .8rem; justify-content: space-between; align-items: baseline; }
+.cv__time { color: var(--muted); font-size: .95rem; white-space: nowrap; }
+.cv__bullets { margin: .4rem 0 .6rem 1rem; }
+.cv__stack { font-size: .95rem; color: var(--muted); }
+.cv__tags { display: flex; flex-wrap: wrap; gap: .4rem .6rem; list-style: none; padding-left: 0; }
+.cv__tags li { border: 1px solid var(--line); padding: .2rem .5rem; border-radius: 999px; font-size: .95rem; }
+
+/* Print ke PDF: rapi, hemat tinta, sembunyikan navigasi tema */
+@media print {
+  :root { color-scheme: light; }
+  header.site-header, .site-footer, nav, .post-meta, .page-meta, .cv__print { display: none !important; }
+  .cv { margin: 0; max-width: 100%; }
+  a { color: inherit; text-decoration: none; border: 0; }
+  @page { margin: 16mm; size: A4; }
+  .cv h1 { font-size: 20pt; }
+  .cv h2 { font-size: 12pt; }
+  .cv p, .cv li, .cv__stack, .cv__time { font-size: 10.5pt; }
+}
