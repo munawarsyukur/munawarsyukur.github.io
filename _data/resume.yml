@@ -1,0 +1,67 @@
+name: Munawar Syukur
+headline: Software Engineer · Web & Backend
+location: Bandung, ID
+email: munawar@example.com
+links:
+  - text: github.com/munawarsyukur
+    url: https://github.com/munawarsyukur
+  - text: linkedin.com/in/your-handle
+    url: https://www.linkedin.com/in/your-handle/
+summary: >
+  Engineer dengan fokus pada pengembangan web modern (Jekyll/Static, React),
+  API backend, dan otomatisasi.
+
+skills:
+  - JavaScript/TypeScript
+  - Node.js
+  - Python
+  - REST/GraphQL
+  - Jekyll & GitHub Pages
+  - CI/CD (GitHub Actions)
+  - SQL (PostgreSQL)
+  - Docker
+
+experience:
+  - role: Software Engineer
+    company: PT Contoh Teknologi
+    time: 2023 — Sekarang
+    bullets:
+      - Mendesain layanan API untuk fitur X (RPS +40%, error −70%).
+      - Migrasi ke GitHub Pages + Actions, memangkas biaya hosting 100%.
+    stack: Node.js, PostgreSQL, Docker, GitHub Actions
+  - role: Web Developer (Freelance)
+    company: Berbagai Klien
+    time: 2021 — 2023
+    bullets:
+      - Membangun 10+ situs statis cepat (Lighthouse ≥ 95).
+      - Komponen tema Jekyll reusable.
+    stack: Jekyll, Hugo, Netlify
+
+projects:
+  - name: Portal Dokumentasi Internal
+    time: 2024
+    desc: Dokumentasi teknis berbasis Jekyll + search; build via GitHub Actions.
+    links:
+      - text: Demo
+        url: https://example.com
+      - text: Kode
+        url: https://github.com/your/repo
+  - name: Bot Otomasi Release
+    time: 2023
+    desc: Bot yang menandai PR, membuat changelog, dan rilis otomatis.
+    links:
+      - text: Kode
+        url: https://github.com/your/repo2
+
+education:
+  - title: S1 Teknik Informatika
+    org: Universitas Contoh
+    time: 2017 — 2021
+
+certs:
+  - Google Associate Cloud Engineer (2024)
+  - Scrum Fundamentals (2023)
+
+languages:
+  - Indonesia (Native)
+  - English (Professional)
