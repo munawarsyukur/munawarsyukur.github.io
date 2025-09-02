@@ -1,0 +1,25 @@
+title: "Munawar Syukur"
+description: "Catatan, proyek, dan tulisan."
+url: "https://munawarsyukur.github.io"   # ganti jika pakai domain kustom
+lang: id
+theme: minima                                  # mudah & built-in
+plugins:                                       # plugin yang didukung GH Pages
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+minima:
+  skin: auto
+  social_links:
+    github: munawarsyukur
+    linkedin: your-linkedin
+    twitter: your-twitter
+
+# Navigasi manual (untuk tema yang mendukung)
+nav:
+  - title: Beranda
+    url: /
+  - title: Tentang
+    url: /about/
+  - title: Blog
+    url: /blog/
