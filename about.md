@@ -28,37 +28,35 @@ permalink: /about/
   </section>
 
 <section class="cv__section">
-  <h2>Skills</h2>
+  <h2>Keahlian</h2>
 
+  {%- comment -%}
+  Ambil data keahlian. Prioritas dari _data/resume.yml (site.data.resume.skills).
+  Jika kamu menyimpan ke variabel r.skills, baris default tetap aman.
+  {%- endcomment -%}
   {%- assign skills = site.data.resume.skills | default: r.skills -%}
 
   {%- comment -%}
-  Jika skills berbentuk MAP (kategori → list), kita iterasi pasangan [key, value].
-  Jika skills berbentuk LIST (string biasa), fallback ke ul.cv__tags.
+  Di Liquid, map diiterasi sebagai pasangan [key, value].
+  key = nama kategori, value = array skill.
   {%- endcomment -%}
-
-  {%- if skills.first and skills.first[0] -%}
-    {#-- Bentuk MAP: setiap item adalah pasangan [kategori, daftar] --#}
-    <div class="cv__skills-grid">
-      {%- for pair in skills -%}
-        {%- assign cat = pair[0] -%}
-        {%- assign items = pair[1] -%}
-        <div class="cv__skill-block">
-          <h3 class="cv__skill-cat">{{ cat | replace: '_', ' ' | capitalize }}</h3>
-          <ul class="cv__tags">
-            {%- for s in items -%}<li>{{ s }}</li>{%- endfor -%}
-          </ul>
-        </div>
-      {%- endfor -%}
-    </div>
-  {%- else -%}
-    {#-- Bentuk LIST sederhana --#}
-    <ul class="cv__tags">
-      {%- for s in skills -%}<li>{{ s }}</li>{%- endfor -%}
-    </ul>
-  {%- endif -%}
+  <div class="cv__skills-grid">
+    {%- for pair in skills -%}
+      {%- assign category = pair[0] -%}
+      {%- assign items = pair[1] -%}
+      <div class="cv__skill-block">
+        <h3 class="cv__skill-cat">
+          {{ category | replace: '_', ' ' | capitalize }}
+        </h3>
+        <ul class="cv__tags">
+          {%- for s in items -%}
+            <li>{{ s }}</li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    {%- endfor -%}
+  </div>
 </section>
-
 
   <section class="cv__section">
     <h2>Pengalaman</h2>
