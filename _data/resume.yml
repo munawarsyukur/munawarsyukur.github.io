@@ -28,6 +28,9 @@ skills:
     - Splunk
     - Prometheus
     - OpenTelemetry
+  Cyber Security:
+    - Wazuh (SIEM & XDR)
+    - Splunk
   Cloud & Infrastructure:
     - AWS
     - Azure
