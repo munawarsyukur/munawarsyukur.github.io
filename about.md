@@ -48,7 +48,7 @@ permalink: /about/
       {%- assign items = pair[1] -%}
       <div class="cv__skill-block">
         <h3 class="cv__skill-cat">
-          {{ category | replace: '_', ' ' | capitalize }}
+          {{ category }}
         </h3>
         <ul class="cv__tags">
           {%- for s in items -%}
