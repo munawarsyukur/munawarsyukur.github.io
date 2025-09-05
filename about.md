@@ -4,7 +4,9 @@ title: "Tentang"
 permalink: /about/
 ---
 
-<link rel="stylesheet" href="/assets/css/resume.css">
+{% assign r = site.data.resume %}
+<link rel="stylesheet" href="{{ '/assets/css/resume.css' | relative_url }}">
+
 
 {% assign r = site.data.resume %}
 
