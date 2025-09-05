@@ -23,16 +23,42 @@ permalink: /about/
   </header>
 
   <section class="cv__section">
-    <h2>Ringkasan</h2>
+    <h2>Summary</h2>
     <p>{{ r.summary }}</p>
   </section>
 
-  <section class="cv__section">
-    <h2>Keahlian</h2>
+<section class="cv__section">
+  <h2>Skills</h2>
+
+  {%- assign skills = site.data.resume.skills | default: r.skills -%}
+
+  {%- comment -%}
+  Jika skills berbentuk MAP (kategori → list), kita iterasi pasangan [key, value].
+  Jika skills berbentuk LIST (string biasa), fallback ke ul.cv__tags.
+  {%- endcomment -%}
+
+  {%- if skills.first and skills.first[0] -%}
+    {#-- Bentuk MAP: setiap item adalah pasangan [kategori, daftar] --#}
+    <div class="cv__skills-grid">
+      {%- for pair in skills -%}
+        {%- assign cat = pair[0] -%}
+        {%- assign items = pair[1] -%}
+        <div class="cv__skill-block">
+          <h3 class="cv__skill-cat">{{ cat | replace: '_', ' ' | capitalize }}</h3>
+          <ul class="cv__tags">
+            {%- for s in items -%}<li>{{ s }}</li>{%- endfor -%}
+          </ul>
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- else -%}
+    {#-- Bentuk LIST sederhana --#}
     <ul class="cv__tags">
-      {% for s in r.skills %}<li>{{ s }}</li>{% endfor %}
+      {%- for s in skills -%}<li>{{ s }}</li>{%- endfor -%}
     </ul>
-  </section>
+  {%- endif -%}
+</section>
+
 
   <section class="cv__section">
     <h2>Pengalaman</h2>
