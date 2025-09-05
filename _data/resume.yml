@@ -53,9 +53,9 @@ skills:
   ITSM & Incident Management:
     - BMC Remedy
     - ServiceNow
-  Data & DB:
+  Database:
     - REST/GraphQL
-    - SQL (PostgreSQL)
+    - SQL (PostgreSQL, MySQL, SQL Server)
 
 experience:
   - role: Software Engineer
