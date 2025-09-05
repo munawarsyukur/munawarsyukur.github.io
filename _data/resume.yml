@@ -1,15 +1,20 @@
 name: Munawar Syukur
-headline: Software Engineer · Web & Backend
-location: Bandung, ID
-email: munawar@example.com
+headline: Software Engineer · Observability & Monitoring Engineer
+location: Bandung, Indonesia (BDG, ID)
+email: hello.munawarsyukur@gmail.com
 links:
   - text: github.com/munawarsyukur
     url: https://github.com/munawarsyukur
-  - text: linkedin.com/in/your-handle
-    url: https://www.linkedin.com/in/your-handle/
+  - text: linkedin.com/in/munawarsyukur
+    url: https://linkedin.com/in/munawarsyukur
 summary: >
-  Engineer dengan fokus pada pengembangan web modern (Jekyll/Static, React),
-  API backend, dan otomatisasi.
+  Results-driven Observability & Monitoring Engineer with 15+ years of experience
+  specializing in Elasticsearch (ELK Stack), Dynatrace, and BMC Remedy. Expert in
+  designing and scaling observability platforms, integrating monitoring with cloud
+  (AWS/Azure) and ITSM tools (ServiceNow, BMC), and automating infrastructure with
+  Terraform, Puppet, and Ansible. Proven track record in reducing MTTR, improving
+  system reliability, and enabling enterprise-level observability.
+  Engineer with fokus web development such as (Jekyll/Static, React), API backend, dan otomatisasi.
 
 skills:
   - JavaScript/TypeScript
