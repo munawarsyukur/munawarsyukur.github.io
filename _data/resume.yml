@@ -65,6 +65,23 @@ experience:
       - Mendesain layanan API untuk fitur X (RPS +40%, error −70%).
       - Migrasi ke GitHub Pages + Actions, memangkas biaya hosting 100%.
     stack: Node.js, PostgreSQL, Docker, GitHub Actions
+
+  - role: Web Developer (Freelance)
+    company: Berbagai Klien
+    time: 2021 — 2023
+    bullets:
+      - Membangun 10+ situs statis cepat (Lighthouse ≥ 95).
+      - Komponen tema Jekyll reusable.
+    stack: Jekyll, Hugo, Netlify
+
+  - role: Software Engineer
+    company: PT Contoh Teknologi
+    time: 2023 — Sekarang
+    bullets:
+      - Mendesain layanan API untuk fitur X (RPS +40%, error −70%).
+      - Migrasi ke GitHub Pages + Actions, memangkas biaya hosting 100%.
+    stack: Node.js, PostgreSQL, Docker, GitHub Actions
+
   - role: Web Developer (Freelance)
     company: Berbagai Klien
     time: 2021 — 2023
