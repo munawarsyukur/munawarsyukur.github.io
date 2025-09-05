@@ -61,7 +61,7 @@ permalink: /about/
 </section>
 
   <section class="cv__section">
-    <h2>Pengalaman</h2>
+    <h2>experience</h2>
     {% for e in r.experience %}
     <div class="cv__item">
       <div class="cv__item-head">
