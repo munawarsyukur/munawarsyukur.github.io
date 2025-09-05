@@ -30,7 +30,7 @@ permalink: /about/
   </section>
 
 <section class="cv__section">
-  <h2>Keahlian</h2>
+  <h2>skills</h2>
 
   {%- comment -%}
   Ambil data keahlian. Prioritas dari _data/resume.yml (site.data.resume.skills).
