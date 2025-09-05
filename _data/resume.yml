@@ -14,13 +14,13 @@ summary: >
   Engineer with fokus web development such as (Jekyll/Static, React), API backend, dan otomatisasi.
 
 skills:
-  search_analytics:
+  - search_analytics:
     - Elasticsearch
     - Logstash
     - Kibana
     - OpenSearch
     - Beats
-  monitoring_observability:
+  - monitoring_observability:
     - Dynatrace
     - SolarWinds
     - BMC Remedy
@@ -28,7 +28,7 @@ skills:
     - Splunk
     - Prometheus
     - OpenTelemetry
-  cloud_infrastructure:
+  - cloud_infrastructure:
     - AWS
     - Azure
     - Kubernetes
@@ -36,7 +36,7 @@ skills:
     - Terraform
     - Proxmox
     - Puppet
-  programming_scripting:
+  - programming_scripting:
     - Python
     - Bash
     - PowerShell
@@ -44,17 +44,17 @@ skills:
     - JavaScript/TypeScript
     - Node.js
     - Python
-  devops_ci_cd:
+  - devops_ci_cd:
     - GitLab CI
     - GitHub
     - CI/CD (GitHub Actions)
     - Jekyll & GitHub Pages
     - Bitbucket
     - Confluence
-  itsm_incident_management:
+  - itsm_incident_management:
     - BMC Remedy
     - ServiceNow
-  database:
+  - database:
     - REST/GraphQL
     - SQL (PostgreSQL)
 
