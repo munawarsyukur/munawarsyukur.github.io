@@ -14,14 +14,49 @@ summary: >
   Engineer with fokus web development such as (Jekyll/Static, React), API backend, dan otomatisasi.
 
 skills:
-  - JavaScript/TypeScript
-  - Node.js
-  - Python
-  - REST/GraphQL
-  - Jekyll & GitHub Pages
-  - CI/CD (GitHub Actions)
-  - SQL (PostgreSQL)
-  - Docker
+  search_analytics:
+    - Elasticsearch
+    - Logstash
+    - Kibana
+    - OpenSearch
+    - Beats
+  monitoring_observability:
+    - Dynatrace
+    - SolarWinds
+    - BMC Remedy
+    - Grafana
+    - Splunk
+    - Prometheus
+    - OpenTelemetry
+  cloud_infrastructure:
+    - AWS
+    - Azure
+    - Kubernetes
+    - Docker
+    - Terraform
+    - Proxmox
+    - Puppet
+  programming_scripting:
+    - Python
+    - Bash
+    - PowerShell
+    - Golang
+    - JavaScript/TypeScript
+    - Node.js
+    - Python
+  devops_ci_cd:
+    - GitLab CI
+    - GitHub
+    - CI/CD (GitHub Actions)
+    - Jekyll & GitHub Pages
+    - Bitbucket
+    - Confluence
+  itsm_incident_management:
+    - BMC Remedy
+    - ServiceNow
+  database:
+    - REST/GraphQL
+    - SQL (PostgreSQL)
 
 experience:
   - role: Software Engineer
