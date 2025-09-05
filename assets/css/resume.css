@@ -21,6 +21,20 @@
 .cv__tags { display: flex; flex-wrap: wrap; gap: .4rem .6rem; list-style: none; padding-left: 0; }
 .cv__tags li { border: 1px solid var(--line); padding: .2rem .5rem; border-radius: 999px; font-size: .95rem; }
 
+.cv__skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem 1.25rem;
+  margin-top: .4rem;
+}
+.cv__skill-block h3.cv__skill-cat {
+  margin: 0 0 .35rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+
 /* Print ke PDF: rapi, hemat tinta, sembunyikan navigasi tema */
 @media print {
   :root { color-scheme: light; }
