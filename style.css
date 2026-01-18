@@ -78,13 +78,9 @@ body {
   color: #111827;
 }
 
-/* ===== GENERIC GRID (BASELINE) ===== */
-.grid {
-  display: grid;
-  gap: 32px;
-}
-
-/* ===== CARD ===== */
+/* =====================================================
+   CARD (GLOBAL – dipakai semua section)
+   ===================================================== */
 .card {
   background: #ffffff;
   padding: 24px;
@@ -100,16 +96,18 @@ body {
   margin-bottom: 8px;
 }
 
-/* =========================================================
-   SKILLS GRID – 2 PER ROW
-   ========================================================= */
-section:nth-of-type(2) .grid {
+/* =====================================================
+   GRID STANDARD (SAMA DENGAN EXPERIENCE)
+   ===================================================== */
+.grid {
+  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
 }
 
-/* =========================================================
-   EXPERIENCE GRID – 2 PER ROW (UNCHANGED)
-   ========================================================= */
+/* =====================================================
+   EXPERIENCE GRID (EXPLICIT)
+   ===================================================== */
 #experience .experience-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -153,25 +151,13 @@ section:nth-of-type(2) .grid {
   margin-bottom: 10px;
 }
 
-/* =========================================================
-   SELECTED PROJECTS (INDEX) – 3 PER ROW
-   ========================================================= */
-section:nth-of-type(4) .grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-/* =========================================================
-   CERTIFICATIONS – 3 PER ROW
-   ========================================================= */
-section.light .grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-/* ===== MOBILE ===== */
+/* =====================================================
+   MOBILE
+   ===================================================== */
 @media (max-width: 900px) {
   .grid,
   #experience .experience-grid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
   }
 }
 
