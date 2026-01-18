@@ -78,7 +78,13 @@ body {
   color: #111827;
 }
 
-/* ===== CARD (GENERIC) ===== */
+/* ===== GENERIC GRID (BASELINE) ===== */
+.grid {
+  display: grid;
+  gap: 32px;
+}
+
+/* ===== CARD ===== */
 .card {
   background: #ffffff;
   padding: 24px;
@@ -94,30 +100,22 @@ body {
   margin-bottom: 8px;
 }
 
-.card ul {
-  margin-top: 10px;
-  padding-left: 20px;
+/* =========================================================
+   SKILLS GRID – 2 PER ROW
+   ========================================================= */
+section:nth-of-type(2) .grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.card ul li {
-  margin-bottom: 6px;
-}
-
-/* ===== EXPERIENCE GRID (2 PER ROW) ===== */
+/* =========================================================
+   EXPERIENCE GRID – 2 PER ROW (UNCHANGED)
+   ========================================================= */
 #experience .experience-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 32px;
 }
 
-/* Mobile */
-@media (max-width: 900px) {
-  #experience .experience-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ===== EXPERIENCE CARD CONTENT ===== */
 .experience-card {
   display: flex;
   flex-direction: column;
@@ -147,88 +145,33 @@ body {
   margin-bottom: 14px;
 }
 
-.meta .dot {
-  margin: 0 4px;
-}
-
 .highlights {
   padding-left: 18px;
 }
 
 .highlights li {
   margin-bottom: 10px;
-  line-height: 1.6;
 }
 
-/* ===== PROJECTS GRID (1 CARD PER ROW) ===== */
-#projects .projects-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px; /* SAMA dengan experience */
+/* =========================================================
+   SELECTED PROJECTS (INDEX) – 3 PER ROW
+   ========================================================= */
+section:nth-of-type(4) .grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-/* ===== PROJECT CARD ===== */
-.project-card {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 24px;
-  align-items: start;
+/* =========================================================
+   CERTIFICATIONS – 3 PER ROW
+   ========================================================= */
+section.light .grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-/* Project Image */
-.project-card img {
-  width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
-  border: 1px solid #e5e7eb;
-}
-
-/* Project Content */
-.project-content h4 {
-  font-size: 1.3rem;
-  margin-bottom: 8px;
-}
-
-.project-meta {
-  font-size: 0.9rem;
-  color: #6b7280;
-  margin-bottom: 10px;
-}
-
-.project-meta a {
-  color: #2563eb;
-  text-decoration: none;
-}
-
-.project-desc,
-.project-description {
-  margin-bottom: 16px;
-  color: #374151;
-}
-
-.project-highlights {
-  padding-left: 18px;
-}
-
-.project-highlights li {
-  margin-bottom: 8px;
-}
-
-/* Tags (optional) */
-.tag {
-  display: inline-block;
-  background: #e5e7eb;
-  color: #111827;
-  padding: 4px 10px;
-  font-size: 0.75rem;
-  border-radius: 999px;
-  margin-right: 6px;
-}
-
-/* ===== PROJECTS MOBILE ===== */
-@media (max-width: 768px) {
-  .project-card {
-    grid-template-columns: 1fr;
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+  .grid,
+  #experience .experience-grid {
+    grid-template-columns: 1fr !important;
   }
 }
 
