@@ -8,79 +8,115 @@
 </head>
 <body>
 
+  <!-- HERO -->
   <header class="hero">
     <div class="container">
       <h1>Selected Projects</h1>
-      <p>Enterprise observability, automation, and infrastructure projects.</p>
+      <p>Enterprise observability, automation, and infrastructure initiatives.</p>
       <a href="index.html" class="btn">Back to Home</a>
     </div>
   </header>
 
-  <section class="section">
+  <!-- PROJECTS -->
+  <section id="projects" class="section light">
     <div class="container">
+      <h3>Projects</h3>
 
-      <!-- PROJECT 1 -->
-      <div class="project">
-        <img src="images/ai-observability.png" alt="AI Observability Project">
-        <div class="project-content">
-          <h3>AI DevOps & Observability Automation</h3>
-          <p>
-            Designed and implemented ML-driven automation using Splunk ITSI and
-            Elasticsearch to improve anomaly detection and operational efficiency.
-          </p>
+      <div class="projects-grid">
 
-          <ul>
-            <li><strong>Technologies:</strong> Splunk ITSI, Elasticsearch, Ansible, Terraform</li>
-            <li><strong>Outcome:</strong> Reduced manual triage, improved MTTR</li>
-          </ul>
+        <!-- PROJECT 1 -->
+        <div class="card project-card">
 
-          <p>
-            🔗 <a href="https://example.com" target="_blank">Project URL / Demo</a>
-          </p>
+          <img src="images/ai-observability.png"
+               alt="AI DevOps & Observability Automation"
+               class="project-image">
+
+          <div class="project-content">
+            <h4 class="project-title">AI DevOps & Observability Automation</h4>
+
+            <p class="project-meta">
+              <span class="icon">🔗</span>
+              <a href="https://example.com" target="_blank">Project Demo</a>
+              <span class="dot">•</span>
+              Splunk ITSI, Elasticsearch, Ansible, Terraform
+            </p>
+
+            <p class="project-description">
+              Designed and implemented ML-driven automation to enhance anomaly
+              detection and reduce operational overhead in large-scale environments.
+            </p>
+
+            <ul class="project-highlights">
+              <li>Improved anomaly detection accuracy using AI-driven correlation</li>
+              <li>Reduced manual triage effort and improved MTTR</li>
+              <li>Automated infrastructure provisioning and configuration</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <!-- PROJECT 2 -->
-      <div class="project">
-        <img src="images/solarwinds.png" alt="SolarWinds Modernization">
-        <div class="project-content">
-          <h3>SolarWinds Modernization</h3>
-          <p>
-            Led modernization of SolarWinds NPM & SAM with ServiceNow and CyberArk
-            integration to improve monitoring reliability and security posture.
-          </p>
+        <!-- PROJECT 2 -->
+        <div class="card project-card">
 
-          <ul>
-            <li><strong>Technologies:</strong> SolarWinds, ServiceNow, CyberArk</li>
-            <li><strong>Outcome:</strong> Improved alert workflows & access control</li>
-          </ul>
+          <img src="images/solarwinds.png"
+               alt="SolarWinds Modernization"
+               class="project-image">
 
-          <p>
-            🔗 <a href="https://example.com" target="_blank">Project Documentation</a>
-          </p>
+          <div class="project-content">
+            <h4 class="project-title">SolarWinds Monitoring Modernization</h4>
+
+            <p class="project-meta">
+              <span class="icon">🔗</span>
+              <a href="https://example.com" target="_blank">Project Documentation</a>
+              <span class="dot">•</span>
+              SolarWinds, ServiceNow, CyberArk
+            </p>
+
+            <p class="project-description">
+              Led modernization of legacy SolarWinds monitoring by integrating
+              ITSM workflows and privileged access management.
+            </p>
+
+            <ul class="project-highlights">
+              <li>Improved alert reliability and escalation workflows</li>
+              <li>Integrated ServiceNow for incident automation</li>
+              <li>Strengthened security posture with CyberArk</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <!-- PROJECT 3 -->
-      <div class="project">
-        <img src="images/elk-gov.png" alt="ELK Government Project">
-        <div class="project-content">
-          <h3>ELK Stack for Government Sector</h3>
-          <p>
-            Designed and deployed a secure ELK Stack with Active Directory
-            authentication, alerting pipelines, and operational dashboards.
-          </p>
+        <!-- PROJECT 3 -->
+        <div class="card project-card">
 
-          <ul>
-            <li><strong>Technologies:</strong> Elasticsearch, Logstash, Kibana, AD</li>
-            <li><strong>Outcome:</strong> Centralized logging & improved visibility</li>
-          </ul>
+          <img src="images/elk-gov.png"
+               alt="ELK Stack Government Deployment"
+               class="project-image">
+
+          <div class="project-content">
+            <h4 class="project-title">Secure ELK Stack for Government Sector</h4>
+
+            <p class="project-meta">
+              Elasticsearch, Logstash, Kibana, Active Directory
+            </p>
+
+            <p class="project-description">
+              Designed and deployed a secure ELK Stack for government use,
+              enabling centralized logging, role-based access control,
+              and operational visibility.
+            </p>
+
+            <ul class="project-highlights">
+              <li>Implemented Active Directory authentication and RBAC</li>
+              <li>Built operational dashboards and alert pipelines</li>
+              <li>Improved auditability and incident response readiness</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p>© Munawar Syukur | Enterprise Observability & IT Operations</p>
   </footer>
