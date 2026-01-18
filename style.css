@@ -240,3 +240,8 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* SPASI ANTAR PROJECT CARDS */
+.projects-grid .project-card {
+  margin-bottom: 48px; /* spasi antar card */
+}
