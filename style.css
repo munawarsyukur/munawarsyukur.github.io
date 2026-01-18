@@ -112,3 +112,17 @@ footer {
   background: #111827;
   color: #e5e7eb;
 }
+
+/* EXPERIENCE GRID - 2 CARDS PER ROW */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
