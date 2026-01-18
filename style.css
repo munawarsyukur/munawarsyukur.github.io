@@ -184,3 +184,59 @@ footer {
   margin-bottom: 10px;
   line-height: 1.6;
 }
+
+/* ===== PROJECTS - SINGLE CARD PER ROW ===== */
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Project Card Layout */
+.project-card {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Image */
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #e5e7eb;
+}
+
+/* Content */
+.project-content h4 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.project-meta {
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background: #e5e7eb;
+  color: #111827;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  margin-right: 6px;
+}
+
+.project-desc {
+  margin-bottom: 16px;
+  color: #374151;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+}
