@@ -464,6 +464,18 @@
   </div>
 </section>
 
+<!-- GITHUB ACTIVITY -->
+<section class="section light">
+  <div class="container">
+    <h3>GitHub Activity</h3>
+
+    <div class="github-calendar">
+      <!-- GitHub Calendar will be loaded here -->
+    </div>
+  </div>
+</section>
+
+
 <!-- CERTIFICATIONS -->
 <section class="section light">
   <div class="container">
@@ -520,6 +532,22 @@
   <footer>
     <p>© Munawar Syukur | Remote IT Operations & Observability</p>
   </footer>
+
+<!-- GitHub Calendar -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+<script>
+  GitHubCalendar(".github-calendar", "munawarsyukur", {
+    responsive: true,
+    tooltips: true
+  });
+</script>
+
 
 </body>
 </html>

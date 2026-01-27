@@ -181,3 +181,12 @@ footer {
   justify-content: center;
   margin-top: 16px;
 }
+
+.github-calendar {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
